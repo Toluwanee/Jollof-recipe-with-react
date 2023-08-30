@@ -1,8 +1,6 @@
 // import { jollofimage } from "./assets/images";
-import img from "../src/assets/images/jollof_rice.jpg"
 const recipe = {
     name: "Jollof Rice",
-    imageUrl: img,
     ingredients: [
       "2 cups of long-grain parboiled rice",
       "1/4 cup of vegetable oil",

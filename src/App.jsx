@@ -1,13 +1,14 @@
 import { recipe } from "./data";
+import Img from "../src/assets/images/jollof_rice.jpg"
 
 const RecipePage = () => {
-  const { name, imageUrl, ingredients, instructions, notes } = recipe;
+  const { name, ingredients, instructions, notes } = recipe;
 
   return (
     <div className="bg-red-300">
       <div className="p-6 md:p-10 lg:px-20">
       <h1 className="text-3xl font-bold mb-4">{name}</h1>
-      <img src={imageUrl} alt={name} className="mb-6 rounded-lg shadow-lg" />
+      <img src={Img} alt={name} className="mb-6 rounded-lg shadow-lg" />
       <div className="mb-6">
         <h2 className="text-xl font-semibold mb-2">Ingredients</h2>
         <ul className="list-disc pl-6">
@@ -16,7 +17,7 @@ const RecipePage = () => {
           ))}
         </ul>
       </div>
-      
+
       <div className="mb-6">
         <h2 className="text-xl font-semibold mb-2">Instructions</h2>
         <ol className="list-decimal pl-6">
