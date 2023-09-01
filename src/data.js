@@ -11,6 +11,7 @@ const recipe = {
       "2 cubes of seasoning"
 
       // update where necessary
+      //test comment
     ],
     instructions: [
       "Wash and drain and parboil the rice.",
