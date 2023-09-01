@@ -1,5 +1,6 @@
+import RiceComponent from "./component/RiceComponent";
 import { recipe } from "./data";
-import Img from "../src/assets/images/jollof_rice.jpg"
+// import Img from /"../src/assets/images/jollof_rice.jpg"
 
 const RecipePage = () => {
   const { name, ingredients, instructions, notes } = recipe;
@@ -8,7 +9,8 @@ const RecipePage = () => {
     <div className="bg-red-300">
       <div className="p-6 md:p-10 lg:px-20">
       <h1 className="text-3xl font-bold mb-4">{name}</h1>
-      <img src={Img} alt={name} className="mb-6 rounded-lg shadow-lg" />
+      <RiceComponent/>
+      {/* <img src={Img} alt={name} className="mb-6 rounded-lg shadow-lg" /> */}
       <div className="mb-6">
         <h2 className="text-xl font-semibold mb-2">Ingredients</h2>
         <ul className="list-disc pl-6">
